@@ -1,0 +1,68 @@
+:root {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+  --primary-color: #bb86fc;
+  --secondary-color: #03dac5;
+  --error-color: #cf6679;
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat-container {
+  max-height: 80vh;
+  width: 60%;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding: 10px;
+}
+
+.chat-message {
+  margin: 10px 0;
+  padding: 8px;
+  background-color: var(--secondary-color);
+  color: var(--background-color);
+  border-radius: 4px;
+}
+
+.message-form {
+  display: flex;
+  width: 60%;
+}
+
+.message-input {
+  flex-grow: 1;
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.send-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: var(--secondary-color);
+}
